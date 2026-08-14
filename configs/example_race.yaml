@@ -1,0 +1,36 @@
+race:
+  name: Example Grand Prix
+  laps: 58
+  baseline_lap_time: 90.0
+circuit:
+  name: Example Circuit
+  pit_lane_loss: 21.5
+  overtaking_difficulty: 0.6
+car:
+  base_pace: 0.0
+  initial_fuel: 105.0
+  fuel_consumption_per_lap: 1.8
+  fuel_effect_per_kg: 0.032
+driver:
+  name: Example Driver
+  pace_delta: 0.0
+  lap_time_variance: 0.0
+tyres:
+  soft:
+    name: SOFT
+    base_delta: -0.8
+    degradation_rate: 0.08
+    warmup_laps: 1
+    cliff_lap: 18
+  medium:
+    name: MEDIUM
+    base_delta: 0.0
+    degradation_rate: 0.045
+    warmup_laps: 1
+    cliff_lap: 28
+  hard:
+    name: HARD
+    base_delta: 0.6
+    degradation_rate: 0.025
+    warmup_laps: 2
+    cliff_lap: 40
