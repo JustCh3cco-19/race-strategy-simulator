@@ -22,7 +22,7 @@ uv run race-strategy validate --config configs/example_race.yaml
 ```bash
 uv run pytest
 uv run ruff check .
-uv run mypy src
+uv run mypy race_strategy
 ```
 
 The roadmap and architectural decisions are documented in `docs/project-spec.md` and `docs/architecture.md`.

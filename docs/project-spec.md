@@ -4,6 +4,15 @@ Race Strategy Simulator is a configurable motorsport strategy simulation tool. I
 
 The complete product requirements are recorded in `race_strategy_simulator.md`. The project must be implemented incrementally and remain runnable after every development step.
 
+## Roadmap
+
+1. Integrate FastF1 as the primary source for real session, lap, stint, and tyre data.
+2. Normalize FastF1 data into the internal Pydantic domain models.
+3. Add a local cache and a reproducible offline mode using YAML fixtures.
+4. Calibrate tyre degradation, fuel consumption, and lap-time models from observed data.
+5. Implement the single-car simulation engine and validate it against real sessions.
+6. Add strategy generation, analytics, and prediction only after the simulator is stable.
+
 ## Engineering rules
 
 - Use Python 3.12+, `uv`, Pydantic, Typer, NumPy where useful, PyYAML, pytest, Ruff, and mypy.

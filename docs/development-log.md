@@ -21,7 +21,7 @@
 
 ### Next recommended step
 
-- Run `uv run pytest`, `uv run ruff check .`, and `uv run mypy src`.
+- Integrate FastF1 as the primary real-data source, normalize session data, and define a cached offline mode.
 
 ### Implemented
 
@@ -49,4 +49,4 @@
 
 ### Next recommended step
 
-- Synchronize dependencies with `uv sync`, then implement and test tyre degradation, fuel, and lap-time calculations as pure functions.
+- Integrate FastF1 data before implementing the physical simulation, then calibrate and test tyre degradation, fuel, and lap-time calculations.
