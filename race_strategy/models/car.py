@@ -12,3 +12,4 @@ class Car(BaseModel):
     fuel_consumption_per_lap: float = Field(gt=0)
     pit_stop_variance: float = Field(default=0, ge=0)
     reliability: float = Field(default=1, ge=0, le=1)
+    retirement_penalty: float = Field(default=300, ge=0)

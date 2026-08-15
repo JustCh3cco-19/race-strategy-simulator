@@ -6,11 +6,15 @@ circuit:
   name: Example Circuit
   pit_lane_loss: 21.5
   overtaking_difficulty: 0.6
+  traffic_probability: 0.0
+  traffic_penalty: 0.0
 car:
   base_pace: 0.0
   initial_fuel: 105.0
   fuel_consumption_per_lap: 1.8
   fuel_effect_per_kg: 0.032
+  reliability: 1.0
+  retirement_penalty: 300.0
 driver:
   name: Example Driver
   pace_delta: 0.0
@@ -34,3 +38,14 @@ tyres:
     degradation_rate: 0.025
     warmup_laps: 2
     cliff_lap: 40
+race_control:
+  - state: VSC
+    start_lap: 20
+    end_lap: 21
+  - state: SAFETY_CAR
+    start_lap: 40
+    end_lap: 42
+race_control_random:
+  vsc_probability: 0.0
+  safety_car_probability: 0.0
+  duration: 2

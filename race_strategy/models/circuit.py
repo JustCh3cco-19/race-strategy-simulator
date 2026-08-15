@@ -11,3 +11,5 @@ class Circuit(BaseModel):
     safety_car_lap_time_multiplier: float = Field(default=1.25, gt=0)
     vsc_lap_time_multiplier: float = Field(default=1.10, gt=0)
     overtaking_difficulty: float = Field(default=0.5, ge=0, le=1)
+    traffic_probability: float = Field(default=0.0, ge=0, le=1)
+    traffic_penalty: float = Field(default=0.0, ge=0)
