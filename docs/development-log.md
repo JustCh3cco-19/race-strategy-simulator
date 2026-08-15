@@ -69,6 +69,8 @@
   backends were unreachable in the current environment.
 - Added an isolated FastF1 adapter test using a session-shaped fixture, so
   normalization remains covered without network access.
+- Reworked the README into a task-oriented guide covering installation,
+  offline and real FastF1 workflows, strategy analysis, and project status.
 
 ### Known issues
 
